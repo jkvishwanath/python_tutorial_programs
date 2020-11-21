@@ -1,4 +1,4 @@
-
+#https://www.geeksforgeeks.org/python-programming-examples/#simple
 #max of numbers
 num1=input("enter num1")
 num2=input("enter num2")
@@ -15,3 +15,8 @@ min_of_num = min(num1,num2)
 print("using max function {0}".format(max_num))
 print("using min function {0}".format(min_of_num))
 
+max_num_multiple_input = max(23, 76, 11, 90, 76)
+print("using max function {0}".format(max_num_multiple_input))
+
+min_num_multiple_input = min(23,76,11,90,76)
+print("using max function {0}".format(min_num_multiple_input))
