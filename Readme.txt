@@ -10,3 +10,6 @@ todo :
 3.python string formatting - Used in logging and printing
     https://realpython.com/python-string-formatting/
 
+
+
+pip install jsonschema
