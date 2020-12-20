@@ -36,3 +36,12 @@ jsonData = json.loads('{"id" : "10","name": "DonOfDen","contact_number":12345678
 # validate it
 is_valid, msg = validate_json(jsonData)
 print(msg)
+
+# For example, here’s a snippet illustrating how to use the number type:
+# { "type": "number" }
+# works: 42
+# works: -1
+#Simple floating point number: 5.0
+# Exponential notation also works: 2.99792458e8
+# Numbers as strings are rejected: "42"
+
