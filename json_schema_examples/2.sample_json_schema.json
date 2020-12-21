@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "things": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "someOtherProp": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "someOtherProp"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "someOtherProp": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "someOtherProp"
+          ]
+        }
+      ]
+    },
+    "schedule": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "required": [
+    "things",
+    "schedule"
+  ]
+}
