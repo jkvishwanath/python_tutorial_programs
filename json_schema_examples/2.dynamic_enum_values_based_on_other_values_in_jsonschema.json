@@ -1,0 +1,130 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "things": [
+                {
+                    "name": "A",
+                    "someOtherProp": 3
+                },
+                {
+                    "name": "B",
+                    "someOtherProp": 9
+                }
+            ],
+            "schedule": [
+                "A",
+                "B",
+                "B",
+                "A"
+            ]
+        }
+    ],
+    "required": [
+        "things",
+        "schedule"
+    ],
+    "properties": {
+        "things": {
+            "$id": "#/properties/things",
+            "type": "array",
+            "title": "The things schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "name": "A",
+                        "someOtherProp": 3
+                    },
+                    {
+                        "name": "B",
+                        "someOtherProp": 9
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/things/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/things/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "name": "A",
+                                "someOtherProp": 3
+                            }
+                        ],
+                        "required": [
+                            "name",
+                            "someOtherProp"
+                        ],
+                        "properties": {
+                            "name": {
+                                "$id": "#/properties/things/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "A"
+                                ]
+                            },
+                            "someOtherProp": {
+                                "$id": "#/properties/things/items/anyOf/0/properties/someOtherProp",
+                                "type": "integer",
+                                "title": "The someOtherProp schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    3
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "schedule": {
+            "$id": "#/properties/schedule",
+            "type": "array",
+            "title": "The schedule schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "A",
+                    "B"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/schedule/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/schedule/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "A",
+                            "B"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
