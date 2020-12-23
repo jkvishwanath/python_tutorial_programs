@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "cars": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "$id": "#/definitions/genericComponent1"
+
+        },
+        {
+          "type": "string",
+          "$id": "#/definitions/genericComponent2"
+        },
+        {
+          "type": "string",
+          "$id": "#/definitions/genericComponent3"
+        }
+      ]
+    }
+  },
+  "selected_cars": { "anyOf": [
+    {"$ref":"#/properties/cars/items"},
+    {"$ref": "#/definitions/genericComponent2"},
+    {"$ref": "#/definitions/genericComponent3"}
+  ] },
+    "required": [
+    "name",
+    "age",
+    "cars",
+    "selected_cars"
+  ]
+}

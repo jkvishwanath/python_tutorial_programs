@@ -17,7 +17,7 @@ def get_schema(filename):
 def validate_json(json_data):
     """REF: https://json-schema.org/ """
     # Describe what kind of json you expect.
-    execute_api_schema = get_schema('2.sample_json_schema')
+    execute_api_schema = get_schema('4.sample_schema')
 
     try:
         validate(instance=json_data, schema=execute_api_schema)
@@ -31,25 +31,24 @@ def validate_json(json_data):
 
 
 data = ({
-    "things": [{
-        "name": "A",
-        "someOtherProp": 3
-    },
-        {
-            "name": "B",
-            "someOtherProp": 9
-        }
-    ],
-    "schedule": [{
-        "name": "A",
-        "someOtherProp": 3
-    }]
+"name":"jkV",
+"age":30,
+"cars":[ "Ford", "BMW", "Fiat" ,23],
+"selected_cars":[],
+"sa": 2
 })
+
+data2= (
+    {
+        "from":"123456789012",
+        "to": "123456789012"
+    }
+)
 # Convert json to python object.
 #jsonData = json.loads(data)
 
 # validate it
-is_valid, msg = validate_json(data)
+is_valid, msg = validate_json(data2)
 print(msg)
 
 # For example, here’s a snippet illustrating how to use the number type:

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Example using definitions and references",
+  "type": "object",
+  "properties": {
+    "from": {
+       "$ref": "#/definitions/timestampDef"
+    },
+    "to":{
+       "$ref": "#/definitions/timestampDef"
+    }
+  },
+  "definitions":{
+     "timestampDef":{
+      "type": "string",
+      "oneOf":[
+        {
+          "pattern": "^now([+-][0-9]+[smhdMy])?$"
+        },
+        {
+          "pattern": "^[0-9]{12,14}$"
+        }
+      ]
+    }
+  }
+}
