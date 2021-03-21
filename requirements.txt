@@ -26,6 +26,7 @@ importlib-resources==5.1.2
 iniconfig==1.1.1
 itypes==1.2.0
 Jinja2==2.11.2
+jsonschema==3.2.0
 lxml==4.5.0
 Markdown==3.2.1
 MarkupSafe==1.1.1
@@ -38,6 +39,7 @@ pyang==2.2.1
 Pygments==2.6.1
 pyparsing==2.4.7
 pyrecord==1.0.1
+pyrsistent==0.17.3
 pytest==6.2.2
 pytz==2020.1
 PyYAML==5.3.1
