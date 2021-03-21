@@ -35,5 +35,5 @@ line_items = Table(
     Column('extended_cost', Numeric(12, 2))
 )
 
-engine = create_engine('sqlite:///C:\\app\\sqlite_2.db')
+engine = create_engine('sqlite:///C:\\app\\sqlite_3.db')
 metadata.create_all(engine)
