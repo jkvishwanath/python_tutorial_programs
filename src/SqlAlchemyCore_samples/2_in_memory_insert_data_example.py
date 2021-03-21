@@ -10,7 +10,8 @@ insert_one_entry = cookies.insert().values(
     quantity='12',
     unit_cost='0.50'
 )
-
+# too see natural db query
+print(str(insert_one_entry))
 # print(str(ins))
 # INSERT INTO cookies
 #   (cookie_name, cookie_recipe_url, cookie_sku, quantity, unit_cost)
