@@ -5,6 +5,9 @@ To Generate requirments file:
 pip freeze > requirements.txt
 
 
+To disabel any pylint warning
+http://pylint.pycqa.org/en/latest/technical_reference/features.html
+
 
 
 
