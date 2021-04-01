@@ -39,3 +39,10 @@ behave
 8.Generic error handling in flask
 9.DB-sql alchemy
 10.Flask routes  rest services
+
+
+https://www.includehelp.com/python/datetime-isoformat-method-with-example.aspx
+https://stackoverflow.com/questions/25568134/regex-to-verify-utc-date-time-format
+\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[1-2]\d|3[0-1])T(?:[0-1]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d+|)(?:Z|(?:\+|\-)(?:\d{2}):?(?:\d{2}))
+2018-02-30T10:59:01.000333+09:00
+
