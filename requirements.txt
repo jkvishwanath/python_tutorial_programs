@@ -16,7 +16,7 @@ cqlsh==5.0.4
 distlib==0.3.1
 dj-database-url==0.5.0
 Django==3.0.7
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 drf-nested-resources==2.0.0
 filelock==3.0.12
 Flask==1.1.2
