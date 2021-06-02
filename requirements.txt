@@ -67,7 +67,7 @@ thrift==0.13.0
 toml==0.10.2
 typing-extensions==3.7.4.3
 uritemplate==3.0.1
-urllib3==1.25.9
+urllib3==1.26.5
 virtualenv==20.4.2
 virtualenv-clone==0.5.4
 Werkzeug==1.0.1
