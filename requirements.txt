@@ -46,7 +46,7 @@ opentelemetry-instrumentation-wsgi==0.18b1
 opentelemetry-sdk==1.0.0rc1
 opentelemetry-util-http==0.18b1
 packaging==20.9
-pipenv==2020.11.15
+pipenv==2022.1.8
 pluggy==0.13.1
 protobuf==3.15.6
 psycopg2-binary==2.8.4
