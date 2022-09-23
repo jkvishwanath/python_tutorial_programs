@@ -48,7 +48,7 @@ opentelemetry-util-http==0.18b1
 packaging==20.9
 pipenv==2020.11.15
 pluggy==0.13.1
-protobuf==3.15.6
+protobuf==3.18.3
 psycopg2-binary==2.8.4
 py==1.10.0
 pyang==2.2.1
